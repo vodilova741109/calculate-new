@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Segoe UI Italique';
+	src: url('../fonts/segoe_ui_italique.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/segoe_ui_italique.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/segoe_ui_italique.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/segoe_ui_italique.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/segoe_ui_italique.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/segoe_ui_italique.svg#segoe_ui_italique') format('svg'); /* Chrome < 4, Legacy iOS */
+}

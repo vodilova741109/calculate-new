@@ -1,0 +1,53 @@
+$var1: #ffffff
+$var2: #3574FF
+$var3: #c7a245
+$var4: #ECF1FA
+
+* 
+	font-family: 'Paytone One', sans-serif
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body 
+	background-color: $var1
+
+a 
+	color: $var2
+	text-decoration: none
+	margin-left: 10px
+
+.container-calc 
+	display: flex
+	justify-content: center
+	align-items: center
+	min-height: 200px
+	background-color: $var3
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+
+	
+
+.content 
+	position: relative
+	
+
+	h2 
+		position: absolute
+		transform: translate(-50%, -50%)
+		font-size: 8em
+		&:nth-child(1) 
+			color: transparent
+			-webkit-text-stroke: 1px $var2
+		
+		&:nth-child(2) 
+			color: $var2
+			animation: animate 4s ease-in-out infinite
+		
+	
+@keyframes animate
+  0%,100%
+    clip-path: polygon(0% 59%, 6% 64%, 12% 68%, 19% 69%, 28% 69%, 38% 68%, 46% 65%, 53% 59%, 59% 52%, 67% 46%, 76% 41%, 84% 40%, 94% 39%, 100% 39%, 100% 100%, 0 100%)
+  
+  50%
+    clip-path: polygon(0% 59%, 7% 53%, 14% 47%, 22% 40%, 32% 41%, 39% 44%, 46% 52%, 52% 59%, 56% 65%, 64% 72%, 72% 74%, 82% 75%, 91% 69%, 100% 59%, 100% 100%, 0 100%)
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/js/slick/slick.css" />
+    <link rel="stylesheet" href="assets/js/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/swip.css" />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Слайдер</title>
+  </head>
+  <body class="body">
+    <nav class="menu">
+      <a href="index.html">Главная</a>
+      <a href="calc.html">Анимация</a>
+    </nav>
+    <!-- <div class="wrapper">
+      <div class="slider center">
+        <div class="img-slide">
+          <img
+            src="assets/images/slide/reply-whatsapp-group-chat-messages-privately 1.png"
+            alt=""
+          />
+        </div>
+        <div class="img-slide">
+          <img
+            src="assets/images/slide/reply-whatsapp-group-chat-messages-privately 1.png"
+            alt=""
+          />
+        </div>
+        <div class="img-slide">
+          <img
+            src="assets/images/slide/reply-whatsapp-group-chat-messages-privately 1.png"
+            alt=""
+          />
+        </div>
+        <div class="img-slide">
+          <img
+            src="assets/images/slide/reply-whatsapp-group-chat-messages-privately 1.png"
+            alt=""
+          />
+        </div>
+        <div class="img-slide">
+          <img
+            src="assets/images/slide/reply-whatsapp-group-chat-messages-privately 1.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Slider main container -->
+ 
+    <div class="answer__tabs">
+      <div class="swiper-container">
+    <div class="answer__tabs-nav swiper-wrapper">
+      <div class="answer__tabs-nav-btn swiper-slide" data-tab="#answer__tab-1">        
+        <div class="img-slide">
+          <img class="answer__tabs-img" src="assets/images/slide/reply-whatsapp-group-chat-messages-privately.png" alt="" />
+        </div>
+        <h5 class="answer__tabs-title">Вопрос 1</h5>
+      </div>
+      <div class="answer__tabs-nav-btn swiper-slide" data-tab="#answer__tab-2">
+        <div class="img-slide">
+          <img class="answer__tabs-img" src="assets/images/slide/reply-whatsapp-group-chat-messages-privately.png" alt="" />
+        </div>
+        <h5 class="answer__tabs-title">Вопрос 2</h5>
+      </div>
+      <div class="answer__tabs-nav-btn swiper-slide" data-tab="#answer__tab-3">
+        <div class="img-slide">
+          <img class="answer__tabs-img"src="assets/images/slide/reply-whatsapp-group-chat-messages-privately.png" alt="" />
+        </div>
+        <h5 class="answer__tabs-title">Вопрос 3</h5>
+      </div>
+      <div class="answer__tabs-nav-btn swiper-slide" data-tab="#answer__tab-4">
+        <div class="img-slide">
+          <img class="answer__tabs-img" src="assets/images/slide/reply-whatsapp-group-chat-messages-privately.png" alt="" />
+        </div>
+        <h5 class="answer__tabs-title">Вопрос 4</h5>
+      </div>
+      <div class="answer__tabs-nav-btn swiper-slide" data-tab="#answer__tab-5">
+        <div class="img-slide">
+          <img class="answer__tabs-img" src="assets/images/slide/reply-whatsapp-group-chat-messages-privately.png" alt="" />
+        </div>
+        <h5 class="answer__tabs-title">Вопрос 5</h5>
+      </div>
+  
+    </div>
+  </div>
+  <button class="prev">
+    <img src="assets/images/prev-arrow.svg" alt="стрелка влево">
+  </button>
+  <button class="next">
+    <img src="assets/images//next-arrow.svg" alt="стрелка вправо">
+  </button>
+</div>
+    <!-- <div class="answer__tabs">
+      <div class="swiper-container">
+        <div class="answer__tabs-nav swiper-wrapper">        
+          <div class="answer__tabs-nav-btn swiper-slide" data-tab="#answer__tab-1" >
+            <div class="img-slide">
+              <img src="assets/images/slide/reply-whatsapp-group-chat-messages-privately.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="prev">
+        <img src="img/prev-arrow.svg" alt="стрелка влево" />
+      </button>
+      <button class="next">
+        <img src="img/next-arrow.svg" alt="стрелка вправо" />
+      </button>
+    </div> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <!-- <script src="assets/js/slick/slick.min.js"></script> -->
+    <script src="assets/js/slider.js" defer></script>
+
+    <script type="module">
+      import Swiper from "https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js";
+
+      const swiper = new Swiper(".swiper-container", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        navigation: {
+          nextEl: ".next",
+          prevEl: ".prev",
+          clickable: true,
+        },
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>

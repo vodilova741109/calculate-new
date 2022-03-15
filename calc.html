@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css" />
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Forum&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/segoe_ui_italique.css">
+    <link rel="stylesheet" href="assets/css/futura_pt_book.css">
+    <link rel="stylesheet" href="assets/css/map.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <script src="assets/js/script.js" defer></script>
+
+    <title>Расчет стоимости</title>
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html">Главная</a>
+        <a href="slide.html">Слайдер</a>
+    </nav>
+    <div class="container-calc">
+        <div class="content">
+            <h2>Калькулятор</h2>
+            <h2>Калькулятор</h2>
+        </div>
+    </div>
+
+    <section class="calc-block">
+      <div class="block-flex">
+        <div class="data-block">
+          <span class="num" id="num">0</span><span class="num" > % </span>
+          <div class="text-stat">положительных отзывов</div>            
+        </div>
+        <div class="data-block">
+          <span class="num" id="num-2">230</span><span class="num" > + </span>
+          <div class="text-stat">выполненных заказов</div>            
+        </div>
+        <div class="data-block">
+          <span class="num" id="num-3">5167</span><span class="num" > + </span>
+          <div class="text-stat">решенных проблем</div>            
+        </div>
+        <div class="data-block">
+          <span class="num" id="num-4">9513</span><span class="num" > + </span>
+          <div class="text-stat">счастливых клиентов</div>            
+        </div>
+
+      </div>
+      
+    
+          
+          <div class="calc block-flex">
+            <div class="data-block">
+              <h2 class="text-active">Рассчитайте вашу цену</h2>
+              <h2>на абонентское обслуживание</h2>
+              <div class="block-rate block-flex">
+                <button class="button__rate button__active">Базовый</button>
+                <button class="button__rate">Оптимальный</button>
+                <button class="button__rate">Премиум</button>
+              </div>
+      
+              <div class="block-range block-flex">
+                <div class="block-range__item">
+                  <p>
+                    <label for="volume">Компьютер, ноутбук, моноблок</label>
+                    <span  class="indicator">16</span>
+                    </p>
+                    <input class="range" value="16" type="range" id="volume" name="volume"
+                    min="0" max="50">
+                    <p><span>0</span><span>50</span></p>              
+                </div>
+                <div class="block-range__item">
+                  <p>
+                    <label for="volume">Файловое хранилище</label>
+                    <span class="indicator">1</span>
+                    </p>
+                    <input class="range" value="1" type="range" id="volume" name="volume"
+                    min="0" max="50">
+                    <p><span>0</span><span>50</span></p>              
+                </div>
+                <div class="block-range__item">
+                  <p>
+                    <label for="volume">Сeрвер</label>
+                    <span class="indicator">2</span>
+                    </p>
+                    <input class="range" value="2" type="range" id="volume" name="volume"
+                    min="0" max="50">
+                    <p><span>0</span><span>50</span></p>              
+                </div>
+                <div class="block-range__item">
+                  <p>
+                    <label for="volume">Активное сетевое оборудование</label>
+                    <span class="indicator">1</span>
+                    </p>
+                    <input class="range" value="1" type="range" id="volume" name="volume"
+                    min="0" max="50">
+                    <p><span>0</span><span>50</span></p>              
+                </div>   
+                <div class="block-type">
+                  <div class="item-type"><input type="radio" name="type" value="1" class="radio" checked><span>1 месяц</span></div>
+                  <div class="item-type"><input type="radio" name="type" value="0.8" class="radio" checked><span>3 месяца</span></div>
+                  <div class="item-type"><input type="radio" name="type" value="0.5" class="radio" checked><span>12 месяцев</span></div>
+                </div>         
+              </div>
+
+               <button class="btn form-btn popup-btn">Заказать обслуживание за <span id="price-btn"></span></button>
+              
+    
+            </div>
+            <div class="data-block">
+                  <div class="service-inner">
+                    
+                      <h3>В стоимость услуг включены:</h3>
+                      <div class="service-text">
+                        <ul>
+                          <li class="li-price">IT аудит</li>
+                          <li class="li-price">Поддержка оргтехники</li>
+                          <li class="li-price">Обслуживание сетевого оборудования</li>
+                          <li class="li-price">Выезды специалистов (неограниченно)</li>
+                          <li class="li-price">Удалённое администрирование (неограниченно)</li>
+                          <li class="li-price">Мониторинг систем оборудования</li>
+                        </ul>
+                      </div>
+                      <div class="service-text d-none">
+                        <ul>
+                          <li class="li-price">IT аудит -2</li>
+                          <li class="li-price">Поддержка оргтехники-2</li>
+                          <li class="li-price">Обслуживание сетевого оборудования-2</li>
+                          <li class="li-price">Выезды специалистов (неограниченно)-2</li>
+                          <li class="li-price">Удалённое администрирование (неограниченно)-2</li>
+                          <li class="li-price">Мониторинг систем оборудования-2</li>
+                        </ul>
+                      </div>
+                      <div class="service-text d-none">
+                        <ul>
+                          <li class="li-price">IT аудит  -3</li>
+                          <li class="li-price">Поддержка оргтехники -3</li>
+                          <li class="li-price">Обслуживание сетевого оборудования -3</li>
+                          <li class="li-price">Выезды специалистов (неограниченно) -3</li>
+                          <li class="li-price">Удалённое администрирование (неограниченно) -3</li>
+                          <li class="li-price">Мониторинг систем оборудования -3</li>
+                        </ul>
+                      </div>
+                      <div class="block-flex no-wrap price">
+                        <div class="text-ptice">Стоимость обслуживания <p id="price"></p></div>
+                        <img src="assets/images/price.png" alt="price">                 
+                      
+                      </div>
+                     
+                  </div>            
+            </div>
+           
+          </div>
+    
+         
+         <div class="map">	
+          <div class="wrp">
+            <div class="map-box">
+              <h2>Наши контакты</h2>
+              <p>г. Москва, Тверская 7</p>
+              <p><a href="tel:+7 (495) 123-45-67">+7 (495) 123-45-67</a></p>
+              <p><a href="mailto:info@site.com">info@site.com</a></p>
+            </div>
+          </div>
+          <div id="map"></div>
+        </div>
+    </section>
+    
+
+
+
+    <script src="//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+    <script>
+      // https://snipp.ru/html-css/map-contacts
+    ymaps.ready(init); 
+    function init(){
+      var myMap = new ymaps.Map("map",{center: [55.85,37.45],zoom: 13});
+      
+      // Элементы управления картой
+      //myMap.controls.add("zoomControl").add("typeSelector").add("mapTools");
+      
+      ymaps.geocode("г. Москва, Тверская 7").then(function (res) {
+        var coord = res.geoObjects.get(0).geometry.getCoordinates();
+        var myPlacemark = new ymaps.Placemark(coord, {}, {
+          iconImageHref: "/img/map.png",
+          iconImageSize: [54, 74],
+          iconImageOffset: [-27, -74]
+        });
+        myMap.geoObjects.add(myPlacemark);
+        myMap.setCenter(coord);	
+          
+        // Сдвиг центра карты влево
+        var newcoord = myMap.getGlobalPixelCenter();
+        newcoord[0] += 150;
+        myMap.setGlobalPixelCenter(newcoord);				
+      });
+    }
+    </script>    
+
+      
+</body>
+</html>
