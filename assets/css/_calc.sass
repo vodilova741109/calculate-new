@@ -3,8 +3,11 @@ $var2: #3574FF
 $var3: #c7a245
 $var4: #ECF1FA
 .calc-block
-    width: 90%
-    margin-left: 5%
+    width: 100%
+    
+.stat-block
+    width: 80%
+    margin-left: 10%    
 .num
     font-family: RoadRadio
     font-style: normal
@@ -18,11 +21,11 @@ $var4: #ECF1FA
     font-weight: bold
     font-size: 26px
     line-height: 120%
-    color: #48546D
+    color: $var4
 
 .service-inner
-    width: 355px
-    padding: 34px
+    width: 100%
+    padding: 10%
     height: auto
     background-color: $var4
 
@@ -36,12 +39,11 @@ $var4: #ECF1FA
         color: #48546D
 
 ul
-    width: 287px
+    width: 100%
     padding: 30px 0
     border-top: 1px solid #E3E6EB
     border-bottom: 1px solid #E3E6EB
     margin: 30px 0
-
     .li-price
         font-family: Circe
         font-style: normal
@@ -50,23 +52,23 @@ ul
         line-height: 28px
         color: #48546D
     .li-price::marker
-        color: #08B204
+        color: $var2
         width: 10px
         height: 10px
 
 .price
 
-    width: 287px
+    width: 100%
     height: 122px
 
     border-radius: 8px
-    background: linear-gradient(0.25turn, #1351D3, $var2)
+    background: linear-gradient(0.25turn, #12347e, $var2)
 
     img
         margin-top: 18px
         border-radius: 8px
     .text-ptice
-        padding-left: 30px
+        padding: 20px 0 0 10px
         color: $var1
 
         p
@@ -79,22 +81,31 @@ ul
 .calc
     width: 80%
     margin: 50px 10%
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+    border-radius: 5px
+    padding: 20px
     .text-active
         color: $var2
 .data-block
+   
     padding: 10px
-    width: 50%
+    width: 50%   
+  
+    h2
+        margin-bottom: 25px
+    
+    
 .block-flex
     display: flex
-    align-items: center
+    align-items: start
     justify-content: space-between
     flex-wrap: wrap
 
 .no-wrap
     flex-wrap: nowrap
 .block-rate
-    width: 361px
-    height: 40px
+    width: 100%
+    height: auto
     .button__rate
         height: 40px
         left: 0px
@@ -103,11 +114,11 @@ ul
         border: 1px solid #E3E6EB
         padding: 10px 20px
         background: $var1
+        color: $var2
 
     .button__active
         background: $var2
-        border-radius: 4px
-        margin-top: 20px
+        border-radius: 4px        
         margin-bottom: 20px
         border: 1px solid $var2
         color: $var1
@@ -115,6 +126,7 @@ ul
 .block-range
     width: 100%
     padding: 20px 0
+    margin-top: 20px
     .block-range__item
         width: 45%
         p
@@ -139,10 +151,12 @@ ul
 
 .block-type
     width: 50%    
+    padding-top: 50px
     .item-type
         display: flex
         align-items: center
         justify-content: space-between
+        margin-top: 10px
 
 // input[type='range']::-webkit-slider-thumb
 //     width: 40px !important
@@ -153,3 +167,21 @@ ul
 //     border: 20px
 body
     // background-color: #6499b1
+
+@media screen and ( max-width: 956px )    
+    .data-block        
+        width: 100%
+    .block-rate
+        width: 60%     
+
+
+@media screen and ( max-width: 576px )
+    .block-range
+        .block-range__item 
+            width: 100%  
+    .block-rate
+        width: 100%  
+    .calc
+        width: 100%
+        margin: 0             
+    

@@ -1,17 +1,21 @@
 // счетчик
-let el = document.getElementById("num");
-el.innerHTML = 0;
-
+const el = document.querySelectorAll('span[name="num"]');
+const arr = Array.from(el);
 onload=function(){
 next();
- };
- 
+ }; 
 
 const next = () => {  
-    if(+el.innerHTML<93){
-        el.innerHTML=(+el.innerHTML)+1;
-        setTimeout(function(){next();}, 20);     
-    } 
+    arr.innerHTML = 0;  
+    arr.value =[93, 230, 5167, 9513]
+  
+    for(let i = 0; i<arr.length; i++) {
+        if(+arr[i].innerHTML<arr.value[i]){
+            arr[i].innerHTML=(+arr[i].innerHTML)+1;
+            setTimeout(function(){next();}, 100);     
+        } 
+    }   
+  
  };
 
 
