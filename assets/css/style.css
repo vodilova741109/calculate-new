@@ -218,6 +218,8 @@ a.link-collection {
   padding: 10%;
   height: auto;
   background-color: #ECF1FA;
+  border-radius: 5px;
+  text-shadow: none;
 }
 
 .service-inner h3 {
@@ -285,6 +287,7 @@ ul .li-price::marker {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   border-radius: 5px;
   padding: 20px;
+  text-shadow: 5px 5px 10px black;
 }
 
 .calc .text-active {
@@ -460,7 +463,29 @@ ul .li-price::marker {
 }
 
 body {
-  background-color: #2e2a29;
+  position: relative;
+  background: url(../images/water-1920.jpg) no-repeat;
+}
+
+.wrapper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.wrapper {
+  position: absolute;
+  z-index: 3;
+}
+
+.section {
+  position: relative;
+  z-index: 5;
 }
 
 .menu {
@@ -469,7 +494,7 @@ body {
 }
 
 a {
-  color: #8eb1f5;
+  color: #3574FF;
   text-decoration: none;
   margin-left: 10px;
 }
@@ -487,7 +512,9 @@ a {
   min-height: 200px;
   width: 100%;
   margin-bottom: 70px;
+  border-radius: 5px;
   background-color: #2e2a29;
+  background: url(../images/water-1920.jpg) no-repeat top center;
   -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
@@ -505,11 +532,11 @@ a {
 
 .content h2:nth-child(1) {
   color: transparent;
-  -webkit-text-stroke: 1px #8eb1f5;
+  -webkit-text-stroke: 1px #3574FF;
 }
 
 .content h2:nth-child(2) {
-  color: #8eb1f5;
+  color: #3574FF;
   -webkit-animation: animate 4s ease-in-out infinite;
           animation: animate 4s ease-in-out infinite;
 }

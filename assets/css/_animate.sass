@@ -1,5 +1,6 @@
 $var1: #ffffff
-$var2: #8eb1f5
+// $var2: #2feded
+$var2: #3574FF
 $var3: #2e2a29
 $var4: #ECF1FA
 
@@ -11,10 +12,32 @@ $var4: #ECF1FA
 	color: $var4
 
 body
-	background-color: $var3
+   position: relative	
+   background: url(../images/water-1920.jpg) no-repeat 
+//    background-color: #0e0e0e
+   background-size: 100% 100%      
+   background-size: cover
+   z-index: 1
+
+.wrapper:after 
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(0,0,0,0.6)
+  z-index: 2
+.wrapper
+	position: absolute
+	z-index: 3	
+.section
+	position: relative
+	z-index: 5	   
 .menu
 	height: 50px
 	padding: 20px
+
 
 a
 	color: $var2
@@ -28,7 +51,9 @@ a
 	min-height: 200px
 	width: 100%
 	margin-bottom: 70px
+	border-radius: 5px
 	background-color: $var3
+	background: url(../images/water-1920.jpg) no-repeat top center	
 	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
 
 .content
@@ -58,5 +83,7 @@ a
 		h2
 			font-size: 3.5em
 	.container-calc
-        margin-bottom: 30px       		
+        margin-bottom: 30px       
+				
 			
+

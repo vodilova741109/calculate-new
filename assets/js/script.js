@@ -132,3 +132,6 @@ for(const input of inputs) {
 }
 
 
+
+
+// анимация
