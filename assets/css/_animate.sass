@@ -13,24 +13,25 @@ $var4: #ECF1FA
 
 body
    position: relative	
-   background: url(../images/water-1920.jpg) no-repeat 
-//    background-color: #0e0e0e
-   background-size: 100% 100%      
-   background-size: cover
-   z-index: 1
-
-.wrapper:after 
-  content: ''
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
-  background: rgba(0,0,0,0.6)
-  z-index: 2
+   
 .wrapper
 	position: absolute
+	width: 100%
 	z-index: 3	
+	background: url(../images/water-1920.jpg) no-repeat 
+	background-size: 100% 100%      
+	background-size: cover
+	z-index: 1
+.wrapper:after 
+	content: ''
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background: rgba(0,0,0,0.6)
+	z-index: 2
+
 .section
 	position: relative
 	z-index: 5	   
@@ -51,10 +52,11 @@ a
 	min-height: 200px
 	width: 100%
 	margin-bottom: 70px
-	border-radius: 5px
-	background-color: $var3
-	background: url(../images/water-1920.jpg) no-repeat top center	
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+	border-radius: 10px
+	background: url(../images/water-1920.jpg) no-repeat right	
+	box-shadow: 0 10px 28px #dac9a8, 10px 15px 10px #c4b69a
+
+
 
 .content
 	position: relative
@@ -79,6 +81,8 @@ a
 	    clip-path: polygon(0% 59%, 7% 53%, 14% 47%, 22% 40%, 32% 41%, 39% 44%, 46% 52%, 52% 59%, 56% 65%, 64% 72%, 72% 74%, 82% 75%, 91% 69%, 100% 59%, 100% 100%, 0 100%)
 
 @media screen and ( max-width: 576px )
+	.wrapper
+        padding: 0
 	.content
 		h2
 			font-size: 3.5em

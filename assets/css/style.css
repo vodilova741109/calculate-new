@@ -406,7 +406,7 @@ ul .li-price::marker {
 }
 
 @media screen and (max-width: 956px) {
-  .data-block {
+  .calc .data-block {
     width: 100%;
   }
   .block-rate {
@@ -415,6 +415,9 @@ ul .li-price::marker {
 }
 
 @media screen and (max-width: 576px) {
+  .stat-block .data-block {
+    width: 100%;
+  }
   .block-range .block-range__item {
     width: 100%;
   }
@@ -464,7 +467,16 @@ ul .li-price::marker {
 
 body {
   position: relative;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
   background: url(../images/water-1920.jpg) no-repeat;
+  background-size: 100% 100%;
+  background-size: cover;
+  z-index: 1;
 }
 
 .wrapper:after {
@@ -476,11 +488,6 @@ body {
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
   z-index: 2;
-}
-
-.wrapper {
-  position: absolute;
-  z-index: 3;
 }
 
 .section {
@@ -512,11 +519,10 @@ a {
   min-height: 200px;
   width: 100%;
   margin-bottom: 70px;
-  border-radius: 5px;
-  background-color: #2e2a29;
-  background: url(../images/water-1920.jpg) no-repeat top center;
-  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border-radius: 10px;
+  background: url(../images/water-1920.jpg) no-repeat right;
+  -webkit-box-shadow: 0 10px 28px #dac9a8, 10px 15px 10px #c4b69a;
+          box-shadow: 0 10px 28px #dac9a8, 10px 15px 10px #c4b69a;
 }
 
 .content {
@@ -564,6 +570,9 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+  .wrapper {
+    padding: 0;
+  }
   .content h2 {
     font-size: 3.5em;
   }
@@ -612,5 +621,11 @@ a {
 #map {
   width: 100%;
   height: 350px;
+}
+
+@media screen and (max-width: 576px) {
+  .ymaps-map {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
